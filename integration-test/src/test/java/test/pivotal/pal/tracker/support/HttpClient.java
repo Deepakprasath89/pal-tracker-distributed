@@ -12,7 +12,7 @@ public class HttpClient {
     private static final MediaType JSON = MediaType.parse("application/json");
 
     //private final OkHttpClient okHttp = new OkHttpClient();
-    private final OkHttpClient okHttp = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).writeTimeout(1000, TimeUnit.SECONDS).readTimeout(1000, TimeUnit.SECONDS).build();
+    private final OkHttpClient okHttp = new OkHttpClient.Builder().connectTimeout(500, TimeUnit.SECONDS).writeTimeout(500, TimeUnit.SECONDS).readTimeout(500, TimeUnit.SECONDS).build();
 
     private final ObjectMapper objectMapper = new ObjectMapper();
 
